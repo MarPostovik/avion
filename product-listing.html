@@ -8,8 +8,9 @@
     <!-- Fonts -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avion</title>
-    <script type="module" crossorigin src="/avion/assets/main-5a26bd36.js"></script>
-    <link rel="stylesheet" href="/avion/assets/main-5626abbf.css">
+    <script type="module" crossorigin src="/avion/assets/productsListing-0428a62d.js"></script>
+    <link rel="modulepreload" crossorigin href="/avion/assets/bootstrap.min-fbabac6b.js">
+    <link rel="stylesheet" href="/avion/assets/bootstrap-150dcd43.css">
   </head>
   <body>
     <header>
@@ -51,7 +52,7 @@
         </div>
         <div class="bottom-line-nav">
           <ul class="links-list d-flex">
-            <li class="link-item"><a href="/avion/product-listing.html">Plant pots</a></li>
+            <li class="link-item"><a href="product-listing.html">Plant pots</a></li>
             <li class="link-item"><a href="product-listing.html">Ceramics</a></li>
             <li class="link-item"><a href="product-listing.html">Tables</a></li>
             <li class="link-item"><a href="product-listing.html">Chairs</a></li>
@@ -61,10 +62,306 @@
           </ul>
         </div>
       </nav>
-      
+      <div class="header-product-listing-block">
+        <div class="product-list-header-heading">All products</div>
+      </div>
     </header>
+    <div class="filter-sorting-buttons">
+      <button class="filter-sorting-button">
+        <span>Filters</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+          <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+        </svg>
+      </button>
+      <button class="filter-sorting-button">
+        <span>Sorting</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+          <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+        </svg>
+      </button>
+    </div>
+    <div class="filter-sorting-container dis-flex">
+      <div class="filters-container d-flex">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span>Category</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+            </svg>
+          </button>
+          <div class="dropdown-content">
+            <form action="#" id="Category">
+              <div class="dropdown-item">
+                <input type="checkbox" id="PlantsPots" data-category="Plant pots" value="Plant pots">
+                <label for="Plant pots"> Plant pots</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Ceramics" data-category="Ceramics" value="Ceramics">
+                <label for="Ceramics"> Ceramics</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Tables" data-category="Tables" value="Tables">
+                <label for="Tables"> Tables</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Chairs" data-category="Chairs" value="Chairs">
+                <label for="Chairs"> Chairs</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Crockery" data-category="Crockery" value="Crockery">
+                <label for="Crockery"> Crockery</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Tableware" data-category="Tableware" value="Tableware">
+                <label for="Tableware"> Tableware</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Cutlery" data-category="Cutlery" value="Cutlery">
+                <label for="Cutlery"> Cutlery</label>
+              </div>
+              <button type="submit" class="dropdown-submit">Show</button>
+            </form>
+            
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span>Product type</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+            </svg>
+          </button>
+          <div class="dropdown-content" >
+            <form action="#" id="ProductType">
+              <div class="dropdown-item">
+                <input type="checkbox" id="Furniture" data-producttype="Furniture" value="Furniture">
+                <label for="Furniture"> Furniture</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Homeware" data-producttype="Homeware" value="Homeware">
+                <label for="Homeware"> Homeware</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Sofas" data-producttype="Sofas" value="Sofas">
+                <label for="Sofas"> Sofas</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="LightFittings" data-producttype="Light fittings" value="Light fittings">
+                <label for="Light fittings"> Light fittings</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="Accessories" data-producttype="Accessories" value="Accessories">
+                <label for="Accessories"> Accessories</label>
+              </div>
+              <button type="submit" class="dropdown-submit">Show</button>
+            </form>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span>Price</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+            </svg>
+          </button>
+          <div class="dropdown-content" >
+            <form action="#" id="Price">
+              <div class="dropdown-item">
+                <input type="checkbox" id="0-100" data-price="0 - 100" value="0 - 100">
+                <label for="0 - 100"> 0 - 100</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="101-250" data-price="101 - 250" value="101 - 250">
+                <label for="101 - 250"> 101 - 250</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="250+" data-price="250 +" value="250 +">
+                <label for="250 +"> 250 +</label>
+              </div>
+              <button type="submit" class="dropdown-submit">Show</button>
+            </form> 
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <span>Brand</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+            </svg>
+          </button>
+          <div class="dropdown-content">
+            <form action="#" id="Brand">
+              <div class="dropdown-item">
+                <input type="checkbox" id="RobertSmith" data-brand="Robert Smith" value="Robert Smith">
+                <label for="Robert Smith"> Robert Smith</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="LiamGallagher" data-brand="Liam Gallagher" value="Liam Gallagher">
+                <label for="Liam Gallagher"> Liam Gallagher</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="BiggieSmalls" data-brand="Biggie Smalls" value="Biggie Smalls">
+                <label for="Biggie Smalls"> Biggie Smalls</label>
+              </div>
+              <div class="dropdown-item">
+                <input type="checkbox" id="ThomYorke" data-brand="Thom Yorke" value="Thom Yorke">
+                <label for="Thom Yorke"> Thom Yorke</label>
+              </div>
+              <button type="submit" class="dropdown-submit">Show</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="sorting-container">
+          <span>Sorting by:</span>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <span data-sorting="Date added">Date added</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
+                  <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
+              </svg>
+            </button>
+            <div class="dropdown-content" id="sorting">
+              <div class="dropdown-item">Date added</div>
+              <div class="dropdown-item">New arrivals</div>
+              <div class="dropdown-item">Best sellers</div>
+              <div class="dropdown-item"> Recently viewed</div>
+              <div class="dropdown-item">Popular this week</div>
+              <div class="dropdown-item">All products</div>
+            </div>
+          </div>
+      </div>
+    </div>
 
-
+    <section class="products-listing-block all-products-page">
+      <div class="products-listing-container d-flex">
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/Chair-7a4ff02d.png" alt="The Dandy chair">
+          </div>
+          <div class="product-name" id="product-name">The Dandy chair</div>
+          <div class="product-price" id="product-price">£250</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/VaseSet-c1c63d1b.png" alt="Rustic Vase Set">
+          </div>
+          <div class="product-name" id="product-name">Rustic Vase Set</div>
+          <div class="product-price" id="product-price">£100</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/VaseSingle-9fb021ca.png" alt="The Silky Vase">
+          </div>
+          <div class="product-name" id="product-name">The Silky Vase</div>
+          <div class="product-price" id="product-price">£75</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/Lamp-91685d7f.png" alt="The Lucy Lamp">
+          </div>
+          <div class="product-name" id="product-name">The Lucy Lamp</div>
+          <div class="product-price" id="product-price">£150</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/white-vase-a1cb98b7.png" alt="The white vase">
+          </div>
+          <div class="product-name" id="product-name">The white vase</div>
+          <div class="product-price" id="product-price">£75</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/wood-taburetka-08d7ddbe.png" alt="The wood taburetka">
+          </div>
+          <div class="product-name" id="product-name">The wood taburetka</div>
+          <div class="product-price" id="product-price">£80</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/plant-2742bce9.png" alt="The green plant">
+          </div>
+          <div class="product-name" id="product-name">The green plant</div>
+          <div class="product-price" id="product-price">£50</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/colorful-chairs-0e868204.png" alt="The Colorful Chairs">
+          </div>
+          <div class="product-name" id="product-name">The Colorful Chairs</div>
+          <div class="product-price" id="product-price">£250</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/black-metal-chair-1197572c.png" alt="Black metal chair">
+          </div>
+          <div class="product-name" id="product-name">Black metal chair</div>
+          <div class="product-price" id="product-price">£159</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/grey-sofa-02f8ad38.jpg" alt="The grey sofa">
+          </div>
+          <div class="product-name" id="product-name">The grey sofa</div>
+          <div class="product-price" id="product-price">£200</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/golden-vases-1c5782b2.png" alt="The golden vases">
+          </div>
+          <div class="product-name" id="product-name">The golden lamps</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/kitchen-table-f8b23023.jpg" alt="The kitchen table">
+          </div>
+          <div class="product-name" id="product-name">The kitchen table</div>
+          <div class="product-price" id="product-price">£350</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/mirror-and-drawer-941cacfe.jpg" alt="The beauty place">
+          </div>
+          <div class="product-name" id="product-name">The beauty place</div>
+          <div class="product-price" id="product-price">£399</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/white-armchair-e5eb647a.jpg" alt="The white armchair">
+          </div>
+          <div class="product-name" id="product-name">The white armchair</div>
+          <div class="product-price" id="product-price">£150</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/white-cute-armchair-92e96e52.jpg" alt="The soft armchair">
+          </div>
+          <div class="product-name" id="product-name">The white soft armchair</div>
+          <div class="product-price" id="product-price">£299</div>
+        </div>
+        <div class="product-item">
+          <div class="product-photo">
+            <img src="/avion/assets/wood-chair-2ececbe3.png" alt="The wood chair">
+          </div>
+          <div class="product-name" id="product-name">The wood chair</div>
+          <div class="product-price" id="product-price">£199</div>
+        </div>
+        <!-- стіл посуда прибори дивани -->
+      </div>
+      <div class="btn-content d-flex">
+        <button class="view-collection-btn"><a href="#">Load more</a></button>
+      </div>
+    </section>
     <footer>
       <div class="top-footer-content d-flex">
         <div class="footer-list">
