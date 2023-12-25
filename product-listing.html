@@ -8,9 +8,9 @@
     <!-- Fonts -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avion</title>
-    <script type="module" crossorigin src="/avion/assets/productsListing-58781cd7.js"></script>
-    <link rel="modulepreload" crossorigin href="/avion/assets/animate-28cfcd16.js">
-    <link rel="stylesheet" href="/avion/assets/animate-06bc13c1.css">
+    <script type="module" crossorigin src="/avion/assets/productsListing-70769ecd.js"></script>
+    <link rel="modulepreload" crossorigin href="/avion/assets/animate-9b6f7a2b.js">
+    <link rel="stylesheet" href="/avion/assets/animate-ad394fd0.css">
   </head>
   <body>
     <header>
@@ -54,13 +54,13 @@
         </div>
         <div class="bottom-line-nav">
           <ul class="links-list d-flex">
-            <li class="link-item"><a href="product-listing.html">Plant pots</a></li>
-            <li class="link-item"><a href="product-listing.html">Ceramics</a></li>
-            <li class="link-item"><a href="product-listing.html">Tables</a></li>
-            <li class="link-item"><a href="product-listing.html">Chairs</a></li>
-            <li class="link-item"><a href="product-listing.html">Crockery</a></li>
-            <li class="link-item"><a href="product-listing.html">Tableware</a></li>
-            <li class="link-item"><a href="product-listing.html">Cutlery</a></li>
+            <li><a class="link-item" href="product-listing.html" data-category="Plant-pots">Plant pots</a></li>
+            <li><a class="link-item" href="product-listing.html" data-category="Ceramics">Ceramics</a></li>
+            <li><a class="link-item" href="product-listing.html" data-category="Tables">Tables</a></li>
+            <li><a class="link-item" href="product-listing.html" data-category="Chairs">Chairs</a></li>
+            <li><a class="link-item" href="product-listing.html" data-category="Crockery">Crockery</a></li>
+            <li><a class="link-item" href="product-listing.html" data-category="Tableware">Tableware</a></li>
+            <li><a class="link-item" href="product-listing.html" data-category="Cutlery">Cutlery</a></li>
           </ul>
         </div>
       </nav>
@@ -98,38 +98,13 @@
             <ion-icon name="caret-up-outline"></ion-icon>
           </button>
           <div class="dropdown-content">
-            <form action="#" id="Category">
-              <div class="dropdown-item">
-                <input type="checkbox" id="PlantsPots" data-category="Plant-pots" value="Plant pots">
-                <label for="Plant pots"> Plant pots</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="Ceramics" data-category="Ceramics" value="Ceramics">
-                <label for="Ceramics"> Ceramics</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="Tables" data-category="Tables" value="Tables">
-                <label for="Tables"> Tables</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="Chairs" data-category="Chairs" value="Chairs">
-                <label for="Chairs"> Chairs</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="Crockery" data-category="Crockery" value="Crockery">
-                <label for="Crockery"> Crockery</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="Tableware" data-category="Tableware" value="Tableware">
-                <label for="Tableware"> Tableware</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="Cutlery" data-category="Cutlery" value="Cutlery">
-                <label for="Cutlery"> Cutlery</label>
-              </div>
-              <button type="submit" class="dropdown-submit">Show</button>
-            </form>
-            
+              <button class="dropdown-item filter-category-btn" data-category="Plant-pots">Plant-pots</button>
+              <button class="dropdown-item filter-category-btn" data-category="Ceramics">Ceramics</button>
+              <button class="dropdown-item filter-category-btn" data-category="Tables">Tables</button>
+              <button class="dropdown-item filter-category-btn" data-category="Chairs">Chairs</button>
+              <button class="dropdown-item filter-category-btn" data-category="Crockery">Crockery</button>
+              <button class="dropdown-item filter-category-btn" data-category="Tableware">Tableware</button>
+              <button class="dropdown-item filter-category-btn" data-category="Cutlery">Cutlery</button>
           </div>
         </div>
         <div class="dropdown">
@@ -142,29 +117,11 @@
             <ion-icon name="caret-up-outline"></ion-icon>
           </button>
           <div class="dropdown-content" >
-            <form action="#" id="ProductType">
-              <div class="dropdown-item">
-                <input type="checkbox" id="Furniture" data-producttype="Furniture" value="Furniture">
-                <label for="Furniture"> Furniture</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="Homeware" data-producttype="Homeware" value="Homeware">
-                <label for="Homeware"> Homeware</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="Sofas" data-producttype="Sofas" value="Sofas">
-                <label for="Sofas"> Sofas</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="LightFittings" data-producttype="Light-fittings" value="Light fittings">
-                <label for="Light fittings"> Light fittings</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="Accessories" data-producttype="Accessories" value="Accessories">
-                <label for="Accessories"> Accessories</label>
-              </div>
-              <button type="submit" class="dropdown-submit">Show</button>
-            </form>
+            <button class="dropdown-item filter-ProductType-btn" data-producttype="Furniture">Furniture</button>
+            <button class="dropdown-item filter-ProductType-btn" data-producttype="Homeware">Homeware</button>
+            <button class="dropdown-item filter-ProductType-btn" data-producttype="Sofas">Sofas</button>
+            <button class="dropdown-item filter-ProductType-btn" data-producttype="Light-fittings">Light-fittings</button>
+            <button class="dropdown-item filter-ProductType-btn" data-producttype="Accessories">Accessories</button>
           </div>
         </div>
         <div class="dropdown">
@@ -177,21 +134,9 @@
             <ion-icon name="caret-up-outline"></ion-icon>
           </button>
           <div class="dropdown-content" >
-            <form action="#" id="Price">
-              <div class="dropdown-item">
-                <input type="checkbox" id="0-100" data-price="0 - 100" value="0 - 100">
-                <label for="0 - 100"> 0 - 100</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="101-250" data-price="101 - 250" value="101 - 250">
-                <label for="101 - 250"> 101 - 250</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="250+" data-price="250 +" value="250 +">
-                <label for="250 +"> 250 +</label>
-              </div>
-              <button type="submit" class="dropdown-submit">Show</button>
-            </form> 
+            <button class="dropdown-item filter-price-btn" data-price="0 - 100">0 - 100</button>
+            <button class="dropdown-item filter-price-btn" data-price="101 - 250">101 - 250</button>
+            <button class="dropdown-item filter-price-btn" data-price="250 +">250 +</button>
           </div>
         </div>
         <div class="dropdown">
@@ -204,35 +149,19 @@
             <ion-icon name="caret-up-outline"></ion-icon>
           </button>
           <div class="dropdown-content">
-            <form action="#" id="Brand">
-              <div class="dropdown-item">
-                <input type="checkbox" id="RobertSmith" data-brand="Robert Smith" value="Robert Smith">
-                <label for="Robert Smith"> Robert Smith</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="LiamGallagher" data-brand="Liam Gallagher" value="Liam Gallagher">
-                <label for="Liam Gallagher"> Liam Gallagher</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="BiggieSmalls" data-brand="Biggie Smalls" value="Biggie Smalls">
-                <label for="Biggie Smalls"> Biggie Smalls</label>
-              </div>
-              <div class="dropdown-item">
-                <input type="checkbox" id="ThomYorke" data-brand="Thom Yorke" value="Thom Yorke">
-                <label for="Thom Yorke"> Thom Yorke</label>
-              </div>
-              <button type="submit" class="dropdown-submit">Show</button>
-            </form>
+            <button class="dropdown-item filter-brand-btn" data-brand="Robert Smith">Robert Smith</button>
+            <button class="dropdown-item filter-brand-btn" data-brand="Liam Gallagher">Liam Gallagher</button>
+            <button class="dropdown-item filter-brand-btn" data-brand="Biggie Smalls">Biggie Smalls</button>
+            <button class="dropdown-item filter-brand-btn" data-brand="Thom Yorke">Thom Yorke</button>
           </div>
         </div>
       </div>
-      
       
       <div class="sorting-container dis-flex">
           <span>Sorting by:</span>
           <div class="dropdown">
             <button class="dropbtn">
-              <span data-sorting="Date added">Date added</span>
+              <span id="span-sorted">Date added</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <rect width="16" height="16" fill="white" style="mix-blend-mode:multiply"/>
                   <path d="M12 6L8 11L4 6H12Z" fill="#2A254B"/>
@@ -240,340 +169,1811 @@
               <ion-icon name="caret-up-outline"></ion-icon>
             </button>
             <div class="dropdown-content" id="sorting">
-              <div class="dropdown-item">Date added</div>
-              <div class="dropdown-item">New arrivals</div>
-              <div class="dropdown-item">Best sellers</div>
-              <div class="dropdown-item"> Recently viewed</div>
-              <div class="dropdown-item">Popular this week</div>
-              <div class="dropdown-item">All products</div>
+              <button class="dropdown-item sorting-btn" data-sort="date">Date added</button>
+              <button class="dropdown-item sorting-btn" data-sort="new">New arrivals</button>
+              <button class="dropdown-item sorting-btn" data-sort="best">Best sellers</button>
+              <button class="dropdown-item sorting-btn" data-sort="recent">Recently viewed</button>
+              <button class="dropdown-item sorting-btn" data-sort="popular">Popular this week</button>
             </div>
           </div>
       </div>
     </div>
-
+    <div class="close-clicked-product-btn" id="close-clicked-product-btn">&#215;</div>
     <section class="products-listing-block all-products-page">
       <div class="products-listing-container d-flex" id="products-listing-container">
-        <div class="product-item" data-category="Chairs">
+        <div class="product-item" data-date="2022-01-02" data-views="8" data-sales="11" data-category="Chairs" data-producttype="Furniture" data-brand="Robert Smith" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/Chair-7a4ff02d.png" alt="The Dandy chair">
           </div>
-          <div class="product-name" id="product-name">The Dandy chair</div>
-          <div class="product-price" id="product-price">£250</div>
+          <div class="product-info-wrapper">
+          <div class="product__name-and-price">
+            <div class="product-name" id="product-name">The Dandy chair</div>
+            <div class="product-price" id="product-price">£115</div>
+          </div>
+          <div class="product-info">
+            <div class="product__decription-wrapper">
+              <h5 class="product__decription-heading">Description</h5>
+              <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+              <ul class="product__info-list">
+                <li class="product__info-list-item">Premium material</li>
+                <li class="product__info-list-item">Handmade upholstery</li>
+                <li class="product__info-list-item">Quality timeless classic</li>
+              </ul>
+            </div>
+            <div class="dimensions__wrapper">
+              <p class="size">Height</p>
+              <p class="size">Width</p>
+              <p class="size">Depth</p>
+              <p class="size_value">110cm</p>
+              <p class="size_value">75cm</p>
+              <p class="size_value">50cm</p>
+            </div>
+            <div class="product-form">
+              <form action="">
+                <label>
+                  Amount:
+                  <input type="number" value="1">
+                </label>
+                <button type="submit" class="addToCardBtn">Add to card</button>
+              </form>
+            </div>
+            </div>
+          </div>
         </div>
-        <div class="product-item" data-category="Plant-pots">
+        <div class="product-item" data-date="2022-01-03" data-views="4" data-sales="21" data-category="Plant-pots" data-producttype="Homeware" data-brand="Liam Gallagher" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/VaseSet-c1c63d1b.png" alt="Rustic Vase Set">
           </div>
-          <div class="product-name" id="product-name">Rustic Vase Set</div>
-          <div class="product-price" id="product-price">£100</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£80</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Plant-pots">
+        <div class="product-item" data-date="2022-01-04" data-views="5" data-sales="10" data-category="Plant-pots" data-producttype="Homeware" data-brand="Biggie Smalls" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/VaseSingle-9fb021ca.png" alt="The Silky Vase">
           </div>
-          <div class="product-name" id="product-name">The Silky Vase</div>
-          <div class="product-price" id="product-price">£75</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Silky Vase</div>
+              <div class="product-price" id="product-price">£90</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Light-fittings">
+        <div class="product-item" data-date="2022-01-05" data-views="6" data-sales="9" data-producttype="Light-fittings" data-brand="Thom Yorke" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/Lamp-91685d7f.png" alt="The Lucy Lamp">
           </div>
-          <div class="product-name" id="product-name">The Lucy Lamp</div>
-          <div class="product-price" id="product-price">£150</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Lucy Lamp</div>
+              <div class="product-price" id="product-price">£75</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Plant-pots">
+        <div class="product-item" data-date="2022-01-02" data-views="9" data-sales="14" data-category="Plant-pots" data-producttype="Homeware" data-brand="Robert Smith" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/white-vase-a1cb98b7.png" alt="The white vase">
           </div>
-          <div class="product-name" id="product-name">The white vase</div>
-          <div class="product-price" id="product-price">£75</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The white vase</div>
+              <div class="product-price" id="product-price">£68</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Chairs">
+        <div class="product-item" data-date="2022-05-02" data-views="15" data-sales="15" data-category="Chairs" data-producttype="Furniture" data-brand="Liam Gallagher" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/wood-taburetka-08d7ddbe.png" alt="The wood taburetka">
           </div>
-          <div class="product-name" id="product-name">The wood taburetka</div>
-          <div class="product-price" id="product-price">£80</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The wood taburetka</div>
+              <div class="product-price" id="product-price">£135</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Plant-pots">
+        <div class="product-item" data-date="2022-07-02" data-views="4" data-sales="21" data-category="Plant-pots" data-producttype="Homeware" data-brand="Thom Yorke" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/plant-2742bce9.png" alt="The green plant">
           </div>
-          <div class="product-name" id="product-name">The green plant</div>
-          <div class="product-price" id="product-price">£50</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The green plant</div>
+              <div class="product-price" id="product-price">£200</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Chairs">
+        <div class="product-item" data-date="2022-06-02" data-views="23" data-sales="23" data-category="Chairs" data-producttype="Furniture" data-brand="Biggie Smalls" data-price="101 - 250"> 
           <div class="product-photo">
             <img src="/avion/assets/colorful-chairs-0e868204.png" alt="The Colorful Chairs">
           </div>
-          <div class="product-name" id="product-name">The Colorful Chairs</div>
-          <div class="product-price" id="product-price">£250</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Colorful Chairs</div>
+              <div class="product-price" id="product-price">£230</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Chairs">
+        <div class="product-item" data-date="2022-12-02" data-views="4" data-sales="9" data-category="Chairs" data-producttype="Furniture" data-brand="Robert Smith" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/black-metal-chair-1197572c.png" alt="Black metal chair">
           </div>
-          <div class="product-name" id="product-name">Black metal chair</div>
-          <div class="product-price" id="product-price">£159</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">Black metal chair</div>
+              <div class="product-price" id="product-price">£200</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Sofas">
+        <div class="product-item" data-date="2022-11-02" data-views="12" data-sales="1" data-producttype="Sofas" data-brand="Thom Yorke" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/grey-sofa-02f8ad38.jpg" alt="The grey sofa">
           </div>
-          <div class="product-name" id="product-name">The grey sofa</div>
-          <div class="product-price" id="product-price">£200</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The grey sofa</div>
+              <div class="product-price" id="product-price">£300</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Light-fittings">
+        <div class="product-item" data-date="2022-10-02" data-views="5" data-sales="2" data-producttype="Light-fittings" data-brand="Liam Gallagher" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/golden-vases-1c5782b2.png" alt="The golden vases">
           </div>
-          <div class="product-name" id="product-name">The golden lamps</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£120</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Chairs">
+        <div class="product-item" data-date="2022-09-02" data-views="1" data-sales="4" data-category="Chairs" data-producttype="Furniture" data-brand="Thom Yorke" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/kitchen-table-f8b23023.jpg" alt="The kitchen table">
           </div>
-          <div class="product-name" id="product-name">The kitchen table</div>
-          <div class="product-price" id="product-price">£350</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The kitchen table</div>
+              <div class="product-price" id="product-price">£249</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Accessories">
+        <div class="product-item" data-date="2022-08-02" data-views="3" data-sales="5" data-producttype="Accessories" data-brand="Thom Yorke" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/mirror-and-drawer-941cacfe.jpg" alt="The beauty place">
           </div>
-          <div class="product-name" id="product-name">The beauty place</div>
-          <div class="product-price" id="product-price">£399</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The beauty place</div>
+              <div class="product-price" id="product-price">£225</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Chairs">
+        <div class="product-item" data-date="2022-01-08" data-views="8" data-sales="3" data-category="Chairs" data-producttype="Furniture" data-brand="Robert Smith" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/white-armchair-e5eb647a.jpg" alt="The white armchair">
           </div>
-          <div class="product-name" id="product-name">The white armchair</div>
-          <div class="product-price" id="product-price">£150</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The white armchair</div>
+              <div class="product-price" id="product-price">£200</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Chairs">
+        <div class="product-item" data-date="2022-01-11" data-views="9" data-sales="9" data-category="Chairs" data-producttype="Furniture" data-brand="Thom Yorke" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/white-cute-armchair-92e96e52.jpg" alt="The soft armchair">
           </div>
-          <div class="product-name" id="product-name">The white soft armchair</div>
-          <div class="product-price" id="product-price">£299</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The soft armchair</div>
+              <div class="product-price" id="product-price">£210</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Chairs">
+        <div class="product-item" data-date="2022-01-12" data-views="6" data-sales="6" data-category="Chairs" data-producttype="Furniture" data-brand="Biggie Smalls" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/wood-chair-2ececbe3.png" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£190</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Sofas">
+        <div class="product-item" data-date="2022-01-01" data-views="9" data-sales="7" data-producttype="Sofas" data-brand="Thom Yorke" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-25-48-926cd8f9.jpg" alt="The white sofa">
           </div>
-          <div class="product-name" id="product-name">The white sofa</div>
-          <div class="product-price" id="product-price">£299</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£260</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Sofas">
+        <div class="product-item" data-date="2022-01-09" data-views="2" data-sales="5" data-producttype="Sofas" data-brand="Robert Smith" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-25-52-e79b0873.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£400</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Sofas">
+        <div class="product-item" data-date="2020-01-02" data-views="14" data-sales="1" data-producttype="Sofas" data-brand="Thom Yorke" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-25-55-91825b2e.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£500</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Sofas">
+        <div class="product-item" data-date="2019-01-02" data-views="17" data-sales="2" data-producttype="Sofas" data-brand="Liam Gallagher" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-25-58-e024376c.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£74</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Sofas">
+        <div class="product-item" data-date="2018-01-02" data-views="12" data-sales="3" data-producttype="Sofas" data-brand="Liam Gallagher" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-02-e00ef011.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
-        </div>
-        <div class="product-item" data-producttype="Sofas">
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£350</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
+        </div> 
+        <div class="product-item" data-date="2019-01-02" data-views="6" data-sales="4" data-producttype="Sofas" data-brand="Robert Smith" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-06-13fb945e.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£49</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Sofas">
+        <div class="product-item" data-date="2020-01-02" data-views="12" data-sales="34" data-producttype="Sofas" data-brand="Robert Smith" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-15-71985e8b.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£445</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Sofas">
+        <div class="product-item" data-date="2021-01-02" data-views="11" data-sales="4" data-producttype="Sofas" data-brand="Liam Gallagher" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-19-823fe073.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£290</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-producttype="Sofas">
+        <div class="product-item" data-date="2022-02-01" data-views="18" data-sales="19" data-producttype="Sofas" data-brand="Biggie Smalls" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-22-11806546.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£685</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Tables">
+        <div class="product-item" data-date="2021-01-03" data-views="2" data-sales="22" data-date="2022-01-02" data-views="8" data-sales="8" data-category="Tables" data-producttype="Furniture" data-brand="Robert Smith" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-26-48e84046.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£215</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Tables">
+        <div class="product-item" data-date="2021-01-02" data-views="7" data-sales="1" data-category="Tables" data-producttype="Furniture" data-brand="Liam Gallagher" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-29-149f6e17.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£120</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Tables">
+        <div class="product-item" data-date="2021-01-02" data-views="16" data-sales="2" data-category="Tables" data-producttype="Furniture" data-brand="Robert Smith" data-price="0 - 100"> 
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-32-7d004f08.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£87</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Tables">
+        <div class="product-item" data-date="2021-01-02" data-views="34" data-sales="15" data-category="Tables" data-producttype="Furniture" data-brand="Robert Smith" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-35-7b3d592d.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£470</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Tables">
+        <div class="product-item" data-date="2021-01-02" data-views="26" data-sales="9" data-category="Tables" data-producttype="Furniture" data-brand="Robert Smith" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-39-8c8e2579.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£280</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Cutlery">
+        <div class="product-item" data-date="2021-01-02" data-views="23" data-sales="10" data-category="Cutlery" data-producttype="Homeware" data-brand="Robert Smith" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-42-83b0e962.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£90</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Cutlery">
+        <div class="product-item" data-date="2021-11-02" data-views="19" data-sales="6" data-category="Cutlery" data-producttype="Homeware" data-brand="Liam Gallagher" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-54-eb3c916a.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£30</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Cutlery">
+        <div class="product-item" data-date="2021-11-04" data-views="8" data-sales="13" data-category="Cutlery" data-producttype="Homeware" data-brand="Liam Gallagher" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-57-3b1374b2.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£25</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Crockery">
+        <div class="product-item" data-date="2021-01-06" data-views="4" data-sales="12" data-category="Crockery" data-producttype="Homeware" data-brand="Biggie Smalls" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-26-59-f0ba1946.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£147</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Crockery">
+        <div class="product-item" data-date="2021-01-07" data-views="18" data-sales="10" data-category="Crockery" data-producttype="Homeware" data-brand="Robert Smith" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-27-03-1503f79c.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£43</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Crockery">
+        <div class="product-item" data-date="2021-01-08" data-views="11" data-sales="7" data-category="Crockery" data-producttype="Homeware" data-brand="Thom Yorke" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/photo_2023-11-13_22-27-06-fef2c9e3.jpg" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£28</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Ceramics">
+        <div class="product-item" data-date="2021-01-09" data-views="1" data-sales="8" data-category="Ceramics" data-producttype="Homeware" data-brand="Biggie Smalls" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/ceramics1-f8129a26.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£56</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Ceramics">
+        <div class="product-item" data-date="2021-01-10" data-views="2" data-sales="3" data-category="Ceramics" data-producttype="Homeware" data-brand="Liam Gallagher" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/ceramics2-6b01d37c.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£184</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Ceramics">
+        <div class="product-item" data-date="2021-01-13" data-views="1" data-sales="5" data-category="Ceramics" data-producttype="Homeware" data-brand="Robert Smith" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/ceramics3-4905b084.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£80</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Ceramics">
+        <div class="product-item" data-date="2021-01-12" data-views="12" data-sales="11" data-category="Ceramics" data-producttype="Homeware" data-brand="Liam Gallagher" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/ceramics4-3113f46f.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£480</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Ceramics">
+        <div class="product-item" data-date="2021-01-11" data-views="22" data-sales="6" data-category="Ceramics" data-producttype="Homeware" data-brand="Liam Gallagher" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/ceramics5-03bab7ed.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£375</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Ceramics">
+        <div class="product-item" data-date="2021-01-04" data-views="44" data-sales="2" data-category="Ceramics" data-producttype="Homeware" data-brand="Biggie Smalls" data-price="101 - 250">
           <div class="product-photo">
             <img src="/avion/assets/ceramics6-9e476f3a.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£230</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Tableware">
+        <div class="product-item" data-date="2021-01-05" data-views="23" data-sales="4" data-category="Tableware" data-producttype="Homeware" data-brand="Liam Gallagher" data-price="250 +">
           <div class="product-photo">
             <img src="/avion/assets/tableware1-e9dc16d6.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£251</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Tableware">
+        <div class="product-item" data-date="2021-01-04" data-views="33" data-sales="8" data-category="Tableware" data-producttype="Homeware" data-brand="Thom Yorke" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/tableware2-5c651517.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£80</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Tableware">
+        <div class="product-item" data-date="2021-01-03" data-views="14" data-sales="3" data-category="Tableware" data-producttype="Homeware" data-brand="Biggie Smalls" data-price="0 - 100"> 
           <div class="product-photo">
             <img src="/avion/assets/tableware3-40af2a19.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£50</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="product-item" data-category="Tableware">
+        <div class="product-item" data-date="2020-01-02" data-views="4" data-sales="1" data-category="Tableware" data-producttype="Homeware" data-brand="Liam Gallagher" data-price="0 - 100">
           <div class="product-photo">
             <img src="/avion/assets/tableware4-59cc5f58.jfif" alt="The wood chair">
           </div>
-          <div class="product-name" id="product-name">The wood chair</div>
-          <div class="product-price" id="product-price">£199</div>
+          <div class="product-info-wrapper">
+            <div class="product__name-and-price">
+              <div class="product-name" id="product-name">The Dandy chair</div>
+              <div class="product-price" id="product-price">£30</div>
+            </div>
+            <div class="product-info">
+              <div class="product__decription-wrapper">
+                <h5 class="product__decription-heading">Description</h5>
+                <p class="product__description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
+                <ul class="product__info-list">
+                  <li class="product__info-list-item">Premium material</li>
+                  <li class="product__info-list-item">Handmade upholstery</li>
+                  <li class="product__info-list-item">Quality timeless classic</li>
+                </ul>
+              </div>
+              <div class="dimensions__wrapper">
+                <p class="size">Height</p>
+                <p class="size">Width</p>
+                <p class="size">Depth</p>
+                <p class="size_value">110cm</p>
+                <p class="size_value">75cm</p>
+                <p class="size_value">50cm</p>
+              </div>
+              <div class="product-form">
+                <form action="">
+                  <label>
+                    Amount:
+                    <input type="number" value="1">
+                  </label>
+                  <button type="submit" class="addToCardBtn">Add to card</button>
+                </form>
+              </div>
+              </div>
+            </div>
         </div>
       </div>
       <div class="btn-content d-flex">
@@ -595,12 +1995,12 @@
         <div class="footer-list">
           <ul class="d-flex">
             <li class="footer-list-heading">Categories</li>
-            <li class="footer-list-item"><a href="#">Crockery</a></li>
-            <li class="footer-list-item"><a href="#">Furniture</a></li>
-            <li class="footer-list-item"><a href="#">Homeware</a></li>
-            <li class="footer-list-item"><a href="#">Plant pots</a></li>
-            <li class="footer-list-item"><a href="#">Chairs</a></li>
-            <li class="footer-list-item"><a href="#">Crockery</a></li>
+            <li class="footer-list-item"><a class="link-item" href="/avion/product-listing.html" data-category="Crockery">Crockery</a></li>
+            <li class="footer-list-item"><a class="link-item" href="/avion/product-listing.html" data-category="Cutlery">Cutlery</a></li>
+            <li class="footer-list-item"><a class="link-item" href="/avion/product-listing.html" data-category="Tables">Tables</a></li>
+            <li class="footer-list-item"><a class="link-item" href="/avion/product-listing.html" data-category="Plant-pots">Plant pots</a></li>
+            <li class="footer-list-item"><a class="link-item" href="/avion/product-listing.html" data-category="Chairs">Chairs</a></li>
+            <li class="footer-list-item"><a class="link-item" href="/avion/product-listing.html" data-category="Ceramics">Ceramics</a></li>
           </ul>
         </div>
         <div class="footer-list">
