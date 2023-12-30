@@ -7,9 +7,9 @@
     <!-- Fonts -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avion</title>
-    <script type="module" crossorigin src="/avion/assets/animate-a5417e0a.js"></script>
-    <script type="module" crossorigin src="/avion/assets/main-f0fd242b.js"></script>
-    <link rel="stylesheet" href="/avion/assets/animate-cf5090f8.css">
+    <script type="module" crossorigin src="/avion/assets/animate-10378de7.js"></script>
+    <script type="module" crossorigin src="/avion/assets/main-67f798f8.js"></script>
+    <link rel="stylesheet" href="/avion/assets/animate-27629539.css">
   </head>
   <body>
     <header>
@@ -66,49 +66,55 @@
     </header>
     <section class="cart-page">
       <div class="cart-container">
-        <div class="cart-heading">Your shopping cart</div>
-        <div class="product-data dis-flex">
-          <div class="product">
-            <span>Product</span>
-          </div>
-          <div class="product-info dis-flex">
-            <span>Quantity</span>
+        <h1 class="cart-heading">Your shopping cart</h1>
+        <div class="product-data">
+          <span>Product</span>
+          <span>Quantity</span>
           <span>Total</span>
-          </div>
         </div>
         <div class="products-added-to-cart">
-          <!-- The cart is empty -->
-          <div class="product-item d-flex">
-            <div class="product-itself d-flex">
-              <div class="product-photo-in-cart">
-                <img src="/avion/assets/plant-2742bce9.png" alt="product">
-              </div>
-              <div class="product-text">
-                <div class="product-name">Basic white vase</div>
-                <div class="product-desc">Beautiful and simple this is one for the classics</div>
-                <div class="product-price">£ <span>85</span></div>
-              </div>
+          <p class="product-name" id="empty-cart">The cart is empty</p>
+
+          <div class="product-item">
+            <div class="product-photo-in-cart">
+              <img src="/avion/assets/plant-2742bce9.png" alt="product">
             </div>
-            <div class="product-info d-flex">
-              <div class="product-quantity">
-                <form action="#">
-                  <input type="text" value="1">
-                </form>
-              </div>
-              <div class="product-total-price"><span class="pound-sign">£</span><span class="total-one-product-price">85</span></div>
+            <div class="product-text">
+                <p class="product-name">Basic white vase</p>
+                <p class="product-desc">Beautiful and simple this is one for the classics</p>
+                <p class="product-price">£<span>85</span></p>
             </div>
+            <div class="product-quantity">
+              <input type="text" value="1">
+            </div>
+            <p class="product-price-right">£<span>85</span></p>
           </div>
+
+          <div class="product-item">
+            <div class="product-photo-in-cart">
+              <img src="/avion/assets/white-cute-armchair-92e96e52.jpg" alt="product">
+            </div>
+            <div class="product-text">
+                <p class="product-name">Basic white vase</p>
+                <p class="product-desc">Beautiful and simple this is one for the classics</p>
+                <p class="product-price">£<span>85</span></p>
+            </div>
+            <div class="product-quantity">
+              <input type="text" value="1">
+            </div>
+            <p class="product-price-right">£<span>85</span></p>
+          </div>
+
+
+
         </div>
-        <div class="cart-container-footer dis-flex">
-          <div class="info">Taxes and shipping are calculated at checkout</div>
-          <div class="total-price-and-checout-btn dis-flex">
-            <div class="total-price-container dis-flex">
-              <span class="subtotal">Subtotal</span><div><span class="pound-sign">£</span><span class="total-price-num" id="total-price">0</span></div>
-            </div>
-            <div class="checout-btn">
-              <button type="button" id="checkout-btn" class="checkout-btn">Go to checkout</button>
-            </div>
-          </div>
+        <div class="cart-container-footer">
+          <p class="info">Taxes and shipping are calculated at checkout</p>
+          <p class="total-price-container">
+            <span class="subtotal">Subtotal</span>
+            <span class="total-price-num">£<span id="total-price">0</span></span>
+          </p>
+          <button type="submit" id="checkout-btn" class="checkout-btn">Go to checkout</button>
         </div>
       </div>
     </section>
