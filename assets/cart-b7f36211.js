@@ -1,0 +1,22 @@
+import"./animate-94c0c353.js";import"./addingToCart-3ffcca3f.js";let v=document.getElementById("gamburger-menu-icon"),L=document.querySelector(".bottom-line-nav"),p=document.querySelector("nav");v.addEventListener("click",()=>{L.style.display==="flex"?(L.style.display="none",p.classList.add("animate__fadeOutLeft"),setTimeout(()=>{p.classList.remove("active"),p.classList.remove("animate__fadeOutLeft")},500),p.classList.remove("animate__fadeInLeft"),v.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M14 3H2V4H14V3Z" fill="#2A254B"/>
+                          <path d="M14 12H2V13H14V12Z" fill="#2A254B"/>
+                          <path d="M14 6H2V7H14V6Z" fill="#2A254B"/>
+                          <path d="M14 9H2V10H14V9Z" fill="#2A254B"/>
+                        </svg>`):(L.style.display="flex",p.classList.add("active"),p.classList.add("animate__fadeInLeft"),v.innerHTML='<ion-icon name="close-outline" class="close-nav"></ion-icon>')});document.addEventListener("DOMContentLoaded",function(){let c=document.getElementsByClassName("link-item");for(let l=0;l<c.length;l++){let i=c[l];i.addEventListener("click",function(r){let d=i.getAttribute("data-category"),u=i.getAttribute("data-sort");if(d!=null){let n=i.getAttribute("href")+"?category="+encodeURIComponent(d);window.location.href=n,r.preventDefault()}else if(u!=null){let n=i.getAttribute("href")+"?sortOption="+encodeURIComponent(u);window.location.href=n,r.preventDefault()}})}});document.addEventListener("DOMContentLoaded",function(){const c=document.querySelector(".products-added-to-cart"),l=document.getElementById("total-price"),i=document.querySelectorAll(".cart-count");let r=JSON.parse(localStorage.getItem("cart"))||[];function d(){c&&(c.innerHTML="");let e=0;r.forEach((t,o)=>{const a=document.createElement("div");a.classList.add("product-item"),a.innerHTML=`
+                   <div class="product-photo-in-cart">
+                     <img src="${t.photo}" alt="product">
+                   </div>
+                   <div class="product-text">
+                       <p class="product-name">${t.title}</p>
+                       <p class="product-desc">${t.description}</p>
+                       <p class="product-price">£<span>${t.price}</span></p>
+                  </div>
+                   <div class="product-quantity">
+                    <button class="remove-quantity">-</button>
+                    <button class="add-quantity">+</button>
+                    <span class="value">${t.quantity}</span>
+                  </div>
+                  <p class="product-price-right">£<span>${t.wholePrice}</span></p>
+                 
+                  `;const s=document.createElement("button");s.classList.add("delete-btn"),s.textContent="DELETE",s.addEventListener("click",()=>{r.splice(o,1),d(),u(),m(),i.forEach(h=>{h.textContent=r.length})}),a.appendChild(s),c.appendChild(a);const y=parseFloat(t.price);e+=y}),l&&(l.textContent=e)}function u(){let e=0;r.forEach(t=>{const o=parseFloat(t.wholePrice);e+=o}),l&&(l.textContent=e)}function m(){localStorage.setItem("cart",JSON.stringify(r))}d(),u(),document.querySelectorAll(".addToCardBtn").forEach(e=>{e.addEventListener("click",()=>{const t=this.parentElement.parentElement.parentElement.parentElement;let o=t.querySelector(".product-photo img").getAttribute("src"),a=t.querySelector(".product-name").innerHTML,s=t.querySelector(".product-price").innerHTML.slice(1),y=t.querySelector(".product__description").innerHTML,h=Number(t.querySelector(".product-quantity .value").innerText);r.push({productName:a,productPhoto:o,productQuantity:h,productDescription:y,productPrice:s}),d(),u(),m()})});let n=document.querySelectorAll(".product-quantity"),g=document.querySelectorAll(".product-price span"),f=document.querySelectorAll(".product-price-right span"),T=document.getElementById("total-price");function E(){let e=Array.from(f).map(t=>parseInt(t.innerText,10)||0).reduce((t,o)=>t+o,0);T.innerText=e}for(let e=0;e<n.length;e++){let t=n[e].lastElementChild.innerText,o=n[e].querySelector(".add-quantity"),a=n[e].querySelector(".remove-quantity");o.addEventListener("click",function(){t++,n[e].lastElementChild.innerText=t,f[e].innerText=Number(g[e].innerText*t),E()}),a.addEventListener("click",function(){t>1&&(t--,n[e].lastElementChild.innerText=t,f[e].innerText=Number(g[e].innerText*t),E())})}i[0].innerText==0&&(c.innerHTML='<p class="product-name" id="empty-cart">The cart is empty</p>')});
