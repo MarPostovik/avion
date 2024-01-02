@@ -1,0 +1,22 @@
+import"./animate-b3080d79.js";import"./addingToCart-3ffcca3f.js";let f=document.getElementById("gamburger-menu-icon"),h=document.querySelector(".bottom-line-nav"),u=document.querySelector("nav");f.addEventListener("click",()=>{h.style.display==="flex"?(h.style.display="none",u.classList.add("animate__fadeOutLeft"),setTimeout(()=>{u.classList.remove("active"),u.classList.remove("animate__fadeOutLeft")},500),u.classList.remove("animate__fadeInLeft"),f.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path d="M14 3H2V4H14V3Z" fill="#2A254B"/>
+                          <path d="M14 12H2V13H14V12Z" fill="#2A254B"/>
+                          <path d="M14 6H2V7H14V6Z" fill="#2A254B"/>
+                          <path d="M14 9H2V10H14V9Z" fill="#2A254B"/>
+                        </svg>`):(h.style.display="flex",u.classList.add("active"),u.classList.add("animate__fadeInLeft"),f.innerHTML='<ion-icon name="close-outline" class="close-nav"></ion-icon>')});document.addEventListener("DOMContentLoaded",function(){let a=document.getElementsByClassName("link-item");for(let r=0;r<a.length;r++){let i=a[r];i.addEventListener("click",function(n){let o=i.getAttribute("data-category"),c=i.getAttribute("data-sort");if(o!=null){let e=i.getAttribute("href")+"?category="+encodeURIComponent(o);window.location.href=e,n.preventDefault()}else if(c!=null){let e=i.getAttribute("href")+"?sortOption="+encodeURIComponent(c);window.location.href=e,n.preventDefault()}})}});document.addEventListener("DOMContentLoaded",function(){const a=document.querySelector(".products-added-to-cart"),r=document.getElementById("total-price"),i=document.querySelectorAll(".cart-count");let n=JSON.parse(localStorage.getItem("cart"))||[];function o(){a&&(a.innerHTML="");let e=0;n.forEach((t,p)=>{const l=document.createElement("div");l.classList.add("product-item"),l.innerHTML=`
+                   <div class="product-photo-in-cart">
+                     <img src="${t.photo}" alt="product">
+                   </div>
+                   <div class="product-text">
+                       <p class="product-name">${t.title}</p>
+                       <p class="product-desc">${t.description}</p>
+                       <p class="product-price">£<span>${t.price}</span></p>
+                  </div>
+                   <div class="product-quantity">
+                    <button class="remove-quantity">-</button>
+                    <button class="add-quantity">+</button>
+                    <span class="value">${t.quantity}</span>
+                  </div>
+                  <p class="product-price-right">£<span>${t.wholePrice}</span></p>
+                 
+                  `;const m=l.querySelector(".add-quantity"),y=l.querySelector(".remove-quantity");m.addEventListener("click",function(){t.quantity=t.quantity+1,t.wholePrice=t.quantity*t.price,c(),o(),d()}),y.addEventListener("click",function(){t.quantity>1&&(t.quantity=t.quantity-1,t.wholePrice=t.quantity*t.price,c(),o(),d())});const s=document.createElement("button");s.classList.add("delete-btn"),s.textContent="DELETE",s.addEventListener("click",()=>{n.splice(p,1),o(),c(),d(),i.forEach(g=>{g.textContent=n.length,n.length===0&&(a.innerHTML='<p class="product-name" id="empty-cart">The cart is empty</p>')})}),l.appendChild(s),a.appendChild(l);const v=parseFloat(t.wholePrice);e+=v}),r&&(r.textContent=e)}function c(){let e=0;n.forEach(t=>{const p=parseFloat(t.wholePrice);e+=p}),r&&(r.textContent=e)}function d(){localStorage.setItem("cart",JSON.stringify(n))}o(),c(),document.querySelectorAll(".addToCardBtn").forEach(e=>{e.addEventListener("click",()=>{const t=this.parentElement.parentElement.parentElement.parentElement;let p=t.querySelector(".product-photo img").getAttribute("src"),l=t.querySelector(".product-name").innerHTML,m=t.querySelector(".product-price").innerHTML.slice(1),y=t.querySelector(".product__description").innerHTML,s=Number(t.querySelector(".product-quantity .value").innerText);n.push({productName:l,productPhoto:p,productQuantity:s,productDescription:y,productPrice:m}),o(),c(),d()})}),i[0].innerText==0&&(a.innerHTML='<p class="product-name" id="empty-cart">The cart is empty</p>')});let q=document.querySelector(".checkout__close-btn"),L=document.querySelector(".checkout"),E=document.getElementById("checkout-btn");q.addEventListener("click",function(){L.style.display="none"});E.addEventListener("click",function(){L.style.display="block"});
